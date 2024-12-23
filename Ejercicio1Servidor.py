@@ -10,8 +10,8 @@ def servidor_tcp():
     print("[SERVIDOR] Conexión establecida con", addr)
 
     # Enviar un mensaje al cliente
-    #mensaje = "Bienvenido al servidor. Envíame algo!"
-    #conn.send(mensaje.encode())
+    mensaje = "Bienvenido al servidor. Envíame algo!"
+    conn.send(mensaje.encode())
 
     # Recibir respuesta del cliente
     datos = conn.recv(1024)

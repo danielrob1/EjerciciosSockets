@@ -6,9 +6,9 @@ def cliente_tcp():
     c.connect(("127.0.0.1", 5000))
     print("[CLIENTE] Conectado al servidor.")
 
-    # Recibir mensaje del servidor
-    #msg = c.recv(1024)
-    #print("[CLIENTE] Mensaje del servidor:", msg.decode())
+    #Recibir mensaje del servidor
+    msg = c.recv(1024)
+    print("[CLIENTE] Mensaje del servidor:", msg.decode())
 
     # Enviar una respuesta
     respuesta = "Hola servidor, aquí el cliente!"
